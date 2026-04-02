@@ -1,0 +1,58 @@
+#To specify a type on a variable = casting
+#Python is an OOPL it uses classes to define data tpes, including its primitive types
+
+#Casting in python is done using constructor functions
+
+'''
+OOP - represent real world things as objects in code.
+Class - blueprint 
+constructor - A constructor is a special func that runs when you create an object 
+  when we create dog , we wan to give it name and color immediately
+   class Dog:
+      def __init__(self, name, color):
+          self.name = name
+          self.color = color
+
+        __init__ = constructor
+
+     When you create a dog d1= Dog("Bruno","Brown")
+     Python automatically runs __init__ (d1,"Bruno","Brown")
+     result d1.name =Bruno 
+            d1.color =Brown
+
+Constructor function = __init__()
+
+It is a function inside a class that initializes the object set up
+
+These are just conversion tools.
+int() - make it a whole number 
+        removes decimals 
+        converts valid number strings to integers
+float() - make it a decimal number 
+          add .0 if needed 
+          converts strings to decimal numbers 
+str() - make it text
+
+Why this matters? 
+User input is always string 
+ age = input ("Enter age:") #always string
+  so we must ccinvert 
+  age = int(age) #casting 
+
+'''
+int(5) #5
+int(5.9) #cuts off decimal not rounding
+int("10") #10
+int() - I want a clean whole number -no decimals
+
+
+float(5) #5.0
+float(4.3) #4.3
+float("12") #12.0
+float("13.2") #13.2
+float()- I want a number that can have decimals 
+
+str(5) #"5"
+str(5.2)#"5.2"
+str("hi")#"hi"
+#Str() - I want to treat this as text
