@@ -43,14 +43,14 @@ User input is always string
 int(5) #5
 int(5.9) #cuts off decimal not rounding
 int("10") #10
-int() - I want a clean whole number -no decimals
+#int() - I want a clean whole number -no decimals
 
 
 float(5) #5.0
 float(4.3) #4.3
 float("12") #12.0
 float("13.2") #13.2
-float()- I want a number that can have decimals 
+#float()- I want a number that can have decimals 
 
 str(5) #"5"
 str(5.2)#"5.2"

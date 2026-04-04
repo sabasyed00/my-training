@@ -1,0 +1,86 @@
+#Boolean represent one of two values : True or False
+print(10>9)
+print(10==9)
+print(10<0)
+
+
+#When you run a condition in a statement, Python returns True or False
+a = 250 
+b = 760 
+
+if b> a :
+    print("b is greater than a")
+else :
+    print("b is not greater than a")
+
+#Evaluate values and variables
+
+#The bool() function allows you to evaluate any value, and give you True or False 
+
+#Most values are true
+#Almosst any value is evaluated to True, if it has some sortof content 
+#Any string,number, list,tuple,set and dict is evaluted to true except 0,or empty ones
+
+bool("abc")
+bool(235)
+bool(["sam","pam","ram"])
+
+#Some values are false
+#empty values or zero 
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+
+class myclass():  #creating a class
+    def __len(self): #def a spl func
+        return 0 #you are telling python length of the obkject is 0 
+myobject = myclass() #creating an object 
+print(bool(myobject))
+
+'''class = keyword to create a blueprint
+myclass = name of the class
+    () = syntax
+
+    def = def a fun
+    __len__ = spl method (python calls this automatically)
+    self =current object 
+
+    my class()= create a new obj
+    myobject = variable storing that object
+    bool(myobj)- does the object have __bool__()
+    else does it have __len__()
+    if __len__() returns :
+    0 -> false
+
+    __len() -> returns 0
+    bool(myobject) -> false
+
+    __len()__ --> how many items inside
+    we have said 0 so it will be false 
+    '''
+
+#Func can return a boolean 
+
+def myFunc():
+    return True
+print(myFunc())  #syntax 
+
+def myFunc():
+    return True
+if myFunc():
+    print("Yes!")
+else:
+    print("No!")
+
+
+#built-in func --> returns a boolean value, like isinstance() func, which can be used to determine if an object is of a certain data type:
+
+#check if an object is an int or not 
+x = 400
+print(isinstance(x,int)) #True
